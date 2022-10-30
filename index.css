@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+}
+img{
+    width: 500px;
+    height: 400px;
+
+}
+.content   {
+    height: 400px;
+    width: 400px;
+    margin-left: 30px;
+    padding-top: 130px;
+    padding-left: 20px;
+}
+.container{
+    display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 100vh;
+}
+h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.83rem;
+    line-height: 1.4;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+button{
+    color: hsl(257, 40%, 49%);
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+    border-color: white;
+    padding: 7px;
+}
+
+.logo img{
+    height: 40px;
+    width: 230px;
+    margin-left: -40px;
+    margin-bottom: 50px;
+
+  
+}
+.icon{
+    position:absolute;
+    bottom: 30px;
+    right: 50px;
+    font-size: 1.2rem;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 15px;
+   
+}
+
+.facebook{
+    border: 1px solid black;
+    border-radius: 50%;
+    border-color: white;
+    padding: 0.2rem;
+}
+
+.twi{
+    border: 1px solid black;
+    border-radius: 50%;
+    border-color: white;
+    padding: 0.2rem;
+}
+.insta{
+    border: 1px solid black;
+    border-radius: 50%;
+    border-color: white;
+    padding: 0.2rem;
+}
+
+@media(max-width:375px){
+    body{
+       text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .icon{
+        position:absolute;
+        left: 4rem;
+       
+        bottom: -95px;
+        display: inline-block;
+        margin-bottom: 10px;
+    
+    }
+   button{
+    margin-bottom: 30px;
+   }
+   .content{
+    height: 350px;
+    width: 350px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 40px;
+
+   }
+
+   img{
+    width: 300px;
+    height: 273px;
+   }
+   .logo img{
+    text-align: left;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+}
